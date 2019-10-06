@@ -46,7 +46,7 @@ public class TugasWeek6 {
         });
     }
      
-     private void proses()throws FileNotFoundException, BadLocationException, IOException{
+    private void proses()throws FileNotFoundException, BadLocationException, IOException{
     JFileChooser loadFile = view.getLoadFile6();
              StyledDocument doc = view.getTxtPane6().getStyledDocument();
              if (JFileChooser.APPROVE_OPTION == loadFile.showOpenDialog(view)) {
@@ -57,14 +57,17 @@ public class TugasWeek6 {
                   char[] words = new char[(int) loadFile.getSelectedFile().length()];
                  
                  try {
-                     reader.read(words);
+                     //inisialisasi untuk membaca kata
+                    reader.read(words);
                     
+                    //membuat variabel
                     String data = null;
                     String data1 = null;
                     doc.insertString(0, "", null);
                     
-                    int hitungKarakter = 0;
-                    int hitungKata = 0;
+                    //membuat variabel untuk menghitung karakter dan kata
+                    int hitungKarakter = 0; //default 0
+                    int hitungKata = 0; //default 0
                     
                     if((data = new String(words)) != null) {
                         String[] wordlist = data.split("\\s+");
@@ -80,6 +83,7 @@ public class TugasWeek6 {
                     }
                      int hitungBaris = re.getLineNumber();
                      
+                     //pop-up menampilkan jumlah baris, kata dan karakter
                      JOptionPane.showMessageDialog(null, "File Berhasil Dibaca" + "\n"
                         + "Jumlah Baris = " + hitungBaris + "\n"
                         + "Jumlah Kata = " + hitungKata + "\n"
@@ -113,9 +117,16 @@ public class TugasWeek6 {
                          writer.flush();
                          writer.close();
                          view.getTxtPane6().setText("");
+                         
+                         //menambahkan pop-up untuk menampilkan data tersimpan
+                        JOptionPane.showMessageDialog(null, "Data Berhasil Tersimpan !!", "PESAN INFORMASI", JOptionPane.INFORMATION_MESSAGE);
+                        
                      } catch (IOException ex) {
                          java.util.logging.Logger.getLogger(TugasWeek6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
                      }
+                 } else {
+                     //pop-up input-an tidak boleh kosong
+                    JOptionPane.showMessageDialog(null, "Teks Tidak Boleh Kosong", "Error", JOptionPane.WARNING_MESSAGE);
                  }
              }
          }

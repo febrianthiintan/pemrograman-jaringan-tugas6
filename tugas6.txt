@@ -1,0 +1,4 @@
+Nama	: Febrianthi Intan Nurzamziah
+NIM	: 1731710058
+Kelas	: MI-3A
+Matkul	: Pemrograman Jaringan
