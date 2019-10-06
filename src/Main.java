@@ -14,31 +14,31 @@ import javax.swing.JTextPane;
  * @author INTAN
  */
 public class Main extends javax.swing.JFrame {
-    private Controller controller;
+    private TugasWeek6 tugas6;
 
     /**
-     * Creates new form tugas5
+     * Creates new form tugas6
      */
     
     public Main() {
         initComponents();
-        controller = new Controller(this);
+        tugas6 = tugas6 = new TugasWeek6(this);
     }
     
-    public JButton getBtBaca5() {
-        return btBaca5;
+    public JButton getBtBaca6() {
+        return btBaca6;
     }
 
-    public JButton getBtSimpan5() {
-        return btSimpan5;
+    public JButton getBtSimpan6() {
+        return btSimpan;
     }
 
-    public JFileChooser getLoadFile5() {
-        return loadFile5;
+    public JFileChooser getLoadFile6() {
+        return loadFile6;
     }
 
-    public JTextPane getTxtPane5() {
-        return txtPane5;
+    public JTextPane getTxtPane6() {
+        return txtPane6;
     }
 
     /**
@@ -51,26 +51,26 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        loadFile5 = new javax.swing.JFileChooser();
-        jLabel5 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        txtPane5 = new javax.swing.JTextPane();
-        btBaca5 = new javax.swing.JButton();
-        btSimpan5 = new javax.swing.JButton();
+        loadFile6 = new javax.swing.JFileChooser();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        txtPane6 = new javax.swing.JTextPane();
+        btBaca6 = new javax.swing.JButton();
+        btSimpan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel5.setFont(new java.awt.Font("Ravie", 1, 24)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("TUGAS 5");
+        jLabel6.setFont(new java.awt.Font("Ravie", 1, 24)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("TUGAS 6");
 
-        jScrollPane5.setViewportView(txtPane5);
+        jScrollPane6.setViewportView(txtPane6);
 
-        btBaca5.setFont(new java.awt.Font("Tempus Sans ITC", 1, 12)); // NOI18N
-        btBaca5.setText("Baca File");
+        btBaca6.setFont(new java.awt.Font("Tempus Sans ITC", 1, 12)); // NOI18N
+        btBaca6.setText("Baca File");
 
-        btSimpan5.setFont(new java.awt.Font("Tempus Sans ITC", 1, 12)); // NOI18N
-        btSimpan5.setText("Simpan File");
+        btSimpan.setFont(new java.awt.Font("Tempus Sans ITC", 1, 12)); // NOI18N
+        btSimpan.setText("Simpan File");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,24 +80,24 @@ public class Main extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btBaca5)
+                        .addComponent(btBaca6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
-                        .addComponent(btSimpan5))
-                    .addComponent(jScrollPane5)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btSimpan))
+                    .addComponent(jScrollPane6)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btBaca5)
-                    .addComponent(btSimpan5))
+                    .addComponent(btBaca6)
+                    .addComponent(btSimpan))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -149,11 +149,11 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btBaca5;
-    private javax.swing.JButton btSimpan5;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JFileChooser loadFile5;
-    private javax.swing.JTextPane txtPane5;
+    private javax.swing.JButton btBaca6;
+    private javax.swing.JButton btSimpan;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JFileChooser loadFile6;
+    private javax.swing.JTextPane txtPane6;
     // End of variables declaration//GEN-END:variables
 }
